@@ -35,7 +35,7 @@ public abstract class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" +
+        return "projetolivro.Pessoa{" +
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
                 ", sexo='" + sexo + '\'' +

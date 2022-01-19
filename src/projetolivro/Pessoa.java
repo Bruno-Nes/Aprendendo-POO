@@ -1,10 +1,20 @@
+package projetolivro;
+
 public class Pessoa {
     private String nome;
+    private String sobrenome;
     private int idade;
     private char sexo;
 
-    public void fazerAniversario() {
+    public Pessoa(String nome, String sobrenome, int idade, char sexo) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.idade = idade;
+        this.sexo = sexo;
+    }
 
+    public void fazerAniversario() {
+        this.idade++;
     }
 
     public String getNome() {
@@ -13,6 +23,14 @@ public class Pessoa {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
     }
 
     public int getIdade() {
