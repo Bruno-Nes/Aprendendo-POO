@@ -18,7 +18,7 @@ public class Livro implements Publicacao{
                 ", totalPaginas=" + totalPaginas +
                 ", pagAtual=" + pagAtual +
                 ", aberto=" + aberto +
-                ", leitor=" + leitor +
+                ", leitor=" + leitor.getNome() +
                 '}';
     }
 
@@ -100,7 +100,7 @@ public class Livro implements Publicacao{
     @Override
     public void folhear(int pagina) {
         if (pagina > this.totalPaginas) {
-
+            this.pagAtual = 0;
         }else {
             this.pagAtual = pagina;
         }
